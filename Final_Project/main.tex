@@ -1,0 +1,82 @@
+%%%%%%%% COSE474-2024F: Final Project Proposal %%%%%%%%%%%%%%%%%
+
+\documentclass{article}
+
+% Recommended, but optional, packages for figures and better typesetting:
+\usepackage{microtype}
+\usepackage{graphicx}
+\usepackage{subfigure}
+\usepackage{booktabs} % for professional tables
+
+% hyperref makes hyperlinks in the resulting PDF.
+\usepackage{hyperref}
+
+% Attempt to make hyperref and algorithmic work together better:
+\newcommand{\theHalgorithm}{\arabic{algorithm}}
+
+% Use the following line for the initial blind version submitted for review:
+%\usepackage{icml2019}
+
+% If accepted, instead use the following line for the camera-ready submission:
+\usepackage[accepted]{icml2019}
+
+% The \icmltitle you define below is probably too long as a header.
+% Therefore, a short form for the running title is supplied here:
+\icmltitlerunning{COSE474-2024F: Final Project Proposal}
+
+\begin{document}
+
+\twocolumn[
+\icmltitle{COSE474-2024F: Final Project Proposal \\
+           ``Emotion Recognition''}
+
+% It is OKAY to include author information, even for blind
+% submissions: the style file will automatically remove it for you
+% unless you've provided the [accepted] option to the icml2019
+% package.
+
+\begin{icmlauthorlist}
+\icmlauthor{DINIE (2022320110)}{}
+\end{icmlauthorlist}
+
+\vskip 0.3in
+]
+
+% Section content starts here
+
+\section{Introduction}
+The motivation behind this project is to develop a robust system for emotion recognition using artificial intelligence. With the increasing reliance on AI in human-computer interactions, accurately detecting and responding to human emotions can significantly enhance user experiences in various domains such as customer service, healthcare, and entertainment. The aim is to explore how AI can be trained to recognize emotional cues from visual and audio inputs to improve interactive systems.
+
+\section{Problem Definition \& Challenges}
+The problem lies in the inherent complexity of human emotions and the subtle variations in emotional expression across different individuals and cultures. Recognizing emotions from various input modalities, such as facial expressions, voice tone, and body language, poses a significant challenge. One of the main difficulties is achieving high accuracy in emotion detection across diverse datasets while avoiding biases that might arise from limited training data.
+
+\section{Related Works}
+Research on emotion recognition has explored models like Convolutional Neural Networks (CNNs) and Recurrent Neural Networks (RNNs) to analyze facial expressions and voice patterns. Previous works include models like FER+ for facial emotion recognition and audio-based emotion classifiers such as Emo-DB. However, many existing models struggle with real-time processing and multi-modal emotion recognition.
+
+\section{Datasets}
+For this project, publicly available datasets like FER2013 for facial emotion recognition and RAVDESS for audio emotion recognition will be used. These datasets provide labeled emotional expressions and speech samples that cover a wide range of emotions. The combination of these datasets will allow for a multi-modal approach to emotion recognition, enhancing the model’s ability to generalize.
+
+\section{State-of-the-Art Methods and Baselines}
+The current state-of-the-art for emotion recognition relies heavily on CNNs for image-based emotion recognition and RNNs or Transformer models for audio-based emotion detection. Baselines for comparison will include standard models like VGGNet and ResNet for facial recognition and Long Short-Term Memory (LSTM) networks for analyzing vocal emotion patterns.
+
+\section{Schedule \& Roles}
+The project will follow the following tentative schedule:  
+\begin{itemize}
+    \item \textbf{Week 1-2}: Literature review and dataset preparation
+    \item \textbf{Week 3-4}: Model design and selection of algorithms
+    \item \textbf{Week 5-6}: Model training and testing on multi-modal datasets
+    \item \textbf{Week 7}: Fine-tuning and performance evaluation
+    \item \textbf{Week 8}: Final testing and report writing
+\end{itemize}
+
+
+\section{References}
+
+\begin{itemize}
+    \item Zeng, Z., Pantic, M., Roisman, G. I., \& Huang, T. S. (2009). A survey of affect recognition methods: Audio, visual, and spontaneous expressions. \textit{IEEE Transactions on Pattern Analysis and Machine Intelligence}, 31(1), 39-58.
+    \item Goodfellow, I., Bengio, Y., \& Courville, A. (2016). \textit{Deep Learning}. MIT Press.
+    \item He, K., Zhang, X., Ren, S., \& Sun, J. (2016). Deep residual learning for image recognition.  \textit{In Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR)}, 770-778.
+    \item Livingstone, S. R., \& Russo, F. A. (2018). The Ryerson Audio-Visual Database of Emotional Speech and Song (RAVDESS): A dynamic, multimodal set of facial and vocal expressions in North American English. \textit{PLOS ONE}, 13(5), e0196391.
+\end{itemize}
+
+\end{document}
